@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Click-tt.tv Extension",
+    "version": "1.0",
+    "description": "La extension recolecta los twitch points y manda los mensajes para que veas cuántos llevas, para verlos presiona F12 para abrir la consola de desarrollador. Desarrollado por @thelexa_69",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.twitch.tv/*"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
